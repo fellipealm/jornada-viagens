@@ -17,19 +17,33 @@
   margin-bottom: 24px;
 }
 
-.card header p{
-    font-size: 20px;
-    font-weight: var(--textweight);
+.card header p {
+  font-size: 20px;
+  font-weight: var(--textweight);
 }
 
-.card header h3{
+.card header h3 {
+  font-size: 40px;
+  font-weight: var(--title-weigh);
+  margin: 8px 0px 0px;
+}
+
+.card header span {
+  font-size: 32px;
+  margin-top: 24px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+  .card header h3 {
+    font-size: 48px;
+  }
+
+  .card header span {
     font-size: 40px;
-    font-weight: var(--title-weigh);
-    margin: 8px 0px 0px;
-}
-
-.card header span{
-    font-size: 32px;
-    margin-top: 24px;
-    display: inline-block;
+  }
 }
